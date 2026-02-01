@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamed Khezri</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .profile-image {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .header-content {
+            flex: 1;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .bio {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .tech-stack {
+            margin-bottom: 30px;
+        }
+
+        .tech-stack h3 {
+            font-size: 1rem;
+            color: #ffffff;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .tech-list {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .tech-item {
+            background-color: #000000;
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            margin-top: 60px;
+        }
+
+        .project-card {
+            background-color: #000000;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .project-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        .project-card p {
+            color: #ffffff;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .project-link {
+            display: inline-block;
+            background-color: #000000;
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .project-link:hover {
+            background-color: #1a1a1a;
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .tech-list {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="HamedKhezri.png" alt="Hamed Khezri" class="profile-image">
+            <div class="header-content">
+                <h1>Hamed Khezri</h1>
+                <p class="bio">I am studying Artificial Intelligence - Software Engineering Technology at Centennial College (1st year/3rd year)</p>
+                
+                <div class="tech-stack">
+                    <h3>Tech Stack</h3>
+                    <div class="tech-list">
+                        <span class="tech-item">HTML</span>
+                        <span class="tech-item">CSS</span>
+                        <span class="tech-item">JavaScript</span>
+                        <span class="tech-item">Python</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <h2>Projects</h2>
+        
+        <div class="project-card">
+            <h3>Student Webpage</h3>
+            <p>Homework project for creating a student webpage to become familiar with HTML, CSS, and JavaScript fundamentals.</p>
+            <a href="http://studentweb.cencol.ca/hkhezri/index.html" class="project-link" target="_blank">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>OpenAI Clone</h3>
+            <p>A clone of OpenAI's interface built to practice and demonstrate web development skills. Features a clean, responsive design and interactive elements.</p>
+            <a href="#" class="project-link">View Project</a>
+        </div>
+    </div>
+</body>
+</html>
