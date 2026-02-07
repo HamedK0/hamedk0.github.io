@@ -3,193 +3,262 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hamed Khezri</title>
-
+<title>Hamed Khezri - Aspiring Backend Developer</title>
+<meta name="description" content="AI Software Engineering student focused on backend development, security, and scalable systems.">
 <style>
 :root{
 --bg:#000;
 --fg:#f5f5f5;
 --mut:rgba(255,255,255,.72);
 --g:#00cc66;
+--platinum:#e5e4e2;
 }
-
 *{margin:0;padding:0;box-sizing:border-box}
-
 body{
-font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
 background:var(--bg);
 color:var(--fg);
 line-height:1.6;
 padding:60px 20px;
 }
-
 .container{
 max-width:950px;
 margin:auto;
 }
-
 .header{
 display:grid;
 grid-template-columns:220px 1fr;
 gap:40px;
 align-items:start;
+margin-bottom:60px;
 }
-
 img{
 width:220px;
 height:220px;
 object-fit:cover;
 background:#0a0a0a;
+border-radius:4px;
 }
-
 .links{
 margin-top:16px;
 display:flex;
 flex-direction:column;
 gap:12px;
 }
-
 .links a,.btn{
-border:1px solid var(--g);
+border:1px solid var(--platinum);
 padding:12px;
-color:#fff;
+color:var(--platinum);
 text-decoration:none;
 display:inline-block;
 transition:.2s;
+text-align:center;
 }
-
 .links a:hover,.btn:hover{
-background:rgba(0,204,102,.12);
+background:rgba(229,228,226,.12);
 }
-
+.links a:focus,.btn:focus{
+outline:2px solid var(--platinum);
+outline-offset:2px;
+}
 h1{
 font-size:2.9rem;
 font-weight:800;
 margin-bottom:8px;
 letter-spacing:.3px;
 }
-
 .role{
 text-transform:uppercase;
 font-weight:800;
 letter-spacing:1px;
 margin-bottom:14px;
+color:var(--platinum);
 }
-
 .bio{
 max-width:720px;
 font-size:1.05rem;
 color:rgba(255,255,255,.92);
 margin-bottom:12px;
 }
-
 .sub{
 color:var(--mut);
 margin-bottom:24px;
+font-style:italic;
 }
-
 .stack{
 display:flex;
 flex-wrap:wrap;
 gap:10px;
 border:1px solid var(--g);
 padding:14px;
+margin-top:20px;
 }
-
 .tag{
 border:1px solid var(--g);
 padding:7px 12px;
 border-radius:999px;
 font-size:.9rem;
+background:rgba(0,204,102,.05);
 }
-
 h2{
 text-align:center;
-margin:60px 0 24px;
+margin:60px 0 32px;
 font-size:2rem;
 font-weight:800;
+text-transform:uppercase;
+letter-spacing:1px;
 }
-
+.projects-grid{
+display:grid;
+gap:24px;
+}
 .card{
 border:1px solid var(--g);
 padding:22px;
+transition:.2s;
 }
-
+.card:hover{
+background:rgba(0,204,102,.03);
+border-color:rgba(0,204,102,.8);
+}
+.card.coming-soon{
+border:1px solid var(--mut);
+opacity:.85;
+}
+.card.coming-soon:hover{
+background:rgba(255,255,255,.03);
+border-color:var(--mut);
+}
+.card h3{
+font-size:1.4rem;
+margin-bottom:8px;
+}
 .meta{
 color:var(--mut);
 font-size:.9rem;
 margin:8px 0 12px;
 }
-
+.card p{
+margin-bottom:16px;
+}
+.coming-label{
+display:inline-block;
+background:rgba(229,228,226,.15);
+color:var(--platinum);
+padding:4px 12px;
+border-radius:4px;
+font-size:.85rem;
+font-weight:700;
+text-transform:uppercase;
+letter-spacing:.5px;
+margin-bottom:12px;
+}
+footer{
+text-align:center;
+margin-top:80px;
+padding-top:40px;
+border-top:1px solid rgba(0,204,102,.3);
+color:var(--mut);
+font-size:.9rem;
+}
 @media(max-width:900px){
-.header{grid-template-columns:1fr}
-img{width:160px;height:160px}
+.header{
+grid-template-columns:1fr;
+gap:30px;
+}
+img{
+width:160px;
+height:160px;
+margin:0 auto;
+display:block;
+}
+.links{
+max-width:300px;
+margin:16px auto 0;
+}
+h1{
+font-size:2.2rem;
+text-align:center;
+}
+.role,.bio,.sub{
+text-align:center;
+max-width:100%;
+}
+}
+@media(max-width:600px){
+body{
+padding:40px 16px;
+}
+h1{
+font-size:1.8rem;
+}
+h2{
+font-size:1.5rem;
+margin:40px 0 24px;
+}
 }
 </style>
 </head>
-
 <body>
-
 <div class="container">
-
-<div class="header">
-
+<header class="header">
 <div>
-<img src="hash.png" alt="Hamed Khezri">
-
-<div class="links">
-<a href="https://github.com/HamedK0" target="_blank">GitHub</a>
-<a href="https://www.linkedin.com/in/hamed-khezri" target="_blank">LinkedIn</a>
+<img src="hash.png" alt="Profile photo of Hamed Khezri">
+<nav class="links" aria-label="Social media links">
+<a href="https://github.com/HamedK0" target="_blank" rel="noopener noreferrer">GitHub</a>
+<a href="https://www.linkedin.com/in/hamed-khezri" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+</nav>
 </div>
-</div>
-
 <div>
-
 <h1>Hamed Khezri</h1>
-
-<div class="role">Backend Engineer | Systems-Focused</div>
-
+<div class="role">Aspiring Backend Developer | Student</div>
 <p class="bio">
-I build backend software with a strong emphasis on reliability, security-aware design, and long-term scalability. 
-I am developing solid foundations in data structures, SQL, and Linux while engineering systems-oriented projects that prioritize correctness and resilience. 
-My goal is to become the kind of engineer trusted with critical systems — where precision, stability, and thoughtful architecture matter.
+First-year software engineering student learning backend development. Building foundations in Python, SQL, and Linux. Interested in security and systems that handle sensitive data reliably.
 </p>
-
 <p class="sub">
-Artificial Intelligence – Software Engineering Technology @ Centennial College (Year 1 / 3)
+Artificial Intelligence – Software Engineering Technology @ Centennial College
 </p>
-
-<div class="stack">
-<span class="tag">Python</span>
-<span class="tag">SQL</span>
-<span class="tag">Linux</span>
-<span class="tag">Git</span>
-<span class="tag">PostgreSQL</span>
-<span class="tag">REST APIs</span>
-<span class="tag">JavaScript</span>
-<span class="tag">HTML/CSS</span>
-</div>
-
+<div class="stack" role="list" aria-label="Technical skills">
+<span class="tag" role="listitem">Python</span>
+<span class="tag" role="listitem">SQL</span>
+<span class="tag" role="listitem">Linux</span>
+<span class="tag" role="listitem">Git</span>
+<span class="tag" role="listitem">PostgreSQL</span>
+<span class="tag" role="listitem">REST APIs</span>
+<span class="tag" role="listitem">JavaScript</span>
+<span class="tag" role="listitem">HTML/CSS</span>
 </div>
 </div>
+</header>
 
+<main>
 <h2>Projects</h2>
-
-<div class="card">
+<div class="projects-grid">
+<article class="card">
 <h3>Student Webpage</h3>
-
 <div class="meta">HTML / CSS / JavaScript</div>
-
 <p>
 A personal webpage built to reinforce front-end fundamentals, layout structure, and maintainable code practices.
 </p>
-
-<a class="btn" href="http://studentweb.cencol.ca/hkhezri/index.html" target="_blank">
-View Project
+<a class="btn" href="http://studentweb.cencol.ca/hkhezri/index.html" target="_blank" rel="noopener noreferrer">
+View Project →
 </a>
+</article>
 
+<article class="card coming-soon">
+<span class="coming-label">In Progress</span>
+<h3>Secure Document Access Portal</h3>
+<div class="meta">Python / Flask / PostgreSQL / Linux</div>
+<p>
+A secure web application for managing classified document access. Authorized personnel can request and download sensitive files while the system maintains complete audit logs tracking who accessed which documents and when.
+</p>
+</article>
 </div>
+</main>
 
+<footer>
+<p>&copy; 2026 Hamed Khezri. All rights reserved.</p>
+</footer>
 </div>
 </body>
 </html>
